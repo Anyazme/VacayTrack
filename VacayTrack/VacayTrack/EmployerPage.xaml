@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="VacayTrack.EmployerPage">
+    <StackLayout>
+
+        <Label Text="VacayTrack" FontSize="24" HorizontalOptions="Center" Margin="20"/>
+        <StackLayout Orientation="Horizontal" Margin="20" HorizontalOptions="Center">
+
+           <Button Text="Я работник" BackgroundColor="#E9E9E9" VerticalOptions="Center" Clicked="ButtonWorkClick" CornerRadius="10" WidthRequest="150"/>
+           <Button Text="Я работодатель" BackgroundColor="#B1DEFF" VerticalOptions="Center" CornerRadius="10" WidthRequest="150"/>
+        </StackLayout>
+        <StackLayout Margin="20">
+            <Frame Margin="5, 5" Padding="5" CornerRadius="10" BackgroundColor="#E9E9E9">
+                <Entry x:Name="nameField" Placeholder="Имя"/>
+            </Frame>
+            <Frame Margin="5, 5" Padding="5" CornerRadius="10" BackgroundColor="#E9E9E9">
+                <Entry x:Name="surnameField" Placeholder="Фамилия"/>
+            </Frame>
+            <Frame Margin="5, 5" Padding="5" CornerRadius="10" BackgroundColor="#E9E9E9">
+                <Entry x:Name="passwodField" IsPassword = "True" Placeholder="Пароль"/>
+            </Frame>
+            <Frame Margin="5, 5" Padding="5" CornerRadius="10" BackgroundColor="#E9E9E9">
+                <Entry x:Name="codeField" IsPassword = "True" Placeholder="Кодовое слово"/>
+            </Frame>
+            <Label x:Name="errorText" Text="" TextColor="Red" FontSize="16" HorizontalOptions="Center" Margin="0, 10, 0, 0"/>
+            <Button Text="Войти" BackgroundColor="#B1DEFF" VerticalOptions="Center" Clicked="ButtonEnterClick" Margin="30, 30" CornerRadius="10"/>
+            
+        </StackLayout>
+        
+
+    </StackLayout>
+</ContentPage>
+

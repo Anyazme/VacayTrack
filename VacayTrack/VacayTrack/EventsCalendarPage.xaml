@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="VacayTrack.EventsCalendarPage">
+    <StackLayout>
+         <Picker x:Name="monthPicker" Title="Select Month"/>
+        <Picker x:Name="yearPicker" Title="Select Year"/>
+        <Button Text="Show Calendar" x:Name="showCalendarButton"/>
+
+        <!-- Место для отображения календаря -->
+        <ListView x:Name="calendarListView">
+            <!-- Placeholder для календаря -->
+        </ListView>
+    </StackLayout>
+</ContentPage>
+

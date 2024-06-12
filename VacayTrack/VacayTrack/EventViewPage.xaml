@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="VacayTrack.EventViewPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White" VerticalOptions="End">
+            <Button Text="Действие 1" Clicked="Action1_Clicked"/>
+            <Button Text="Действие 2" Clicked="Action2_Clicked"/>
+            <Button Text="Действие 3" Clicked="Action3_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+
